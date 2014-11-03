@@ -1,0 +1,17 @@
+root = true
+
+[*]
+indent_style = space
+indent_size = 2
+end_of_line = lf
+insert_final_newline = true
+
+[*.md]
+indent_style = tab
+insert_final_newline = false
+
+[.editorconfig]
+insert_final_newline = false
+
+[{*.json,*.yml}]
+insert_final_newline = false
