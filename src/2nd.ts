@@ -1,9 +1,9 @@
 class Sample2 {
-	constructor(public name:string, private age:number) {
-	}
-	public getName(): string {
-		return this.name;
-	}
+  constructor(public name:string, private age:number) {
+  }
+  public getName(): string {
+    return this.name;
+  }
 }
 
 var mySample = new Sample2('hoge', 20);
@@ -14,16 +14,16 @@ mySample.age;
 
 
 interface IHoge {
-	str: string;
-	methodA(): string;
+  str: string;
+  methodA(): string;
 }
 
 class Fuga implements IHoge {
-	constructor(public str:string) {
-	}
-	methodA(): string {
-		return "I'm " + this.str;
-	}
+  constructor(public str:string) {
+  }
+  methodA(): string {
+    return "I'm " + this.str;
+  }
 }
 
 var f = new Fuga("fuga!");
@@ -31,22 +31,22 @@ var f = new Fuga("fuga!");
 
 
 module sampleM1 {
-	export var str = "string";
+  export var str = "string";
 }
 
 module sampleM2 {
-	export class Hoge {
-		hello(word: string): string {
-			return "Hello, " + word;
-		}
-	}
-
-	class Fuga {
+  export class Hoge {
+    hello(word: string): string {
+      return "Hello, " + word;
+    }
   }
 
-	export interface IMiyo {
-		hello(word: string): string;
-	}
+  class Fuga {
+  }
+
+  export interface IMiyo {
+    hello(word: string): string;
+  }
 }
 
 module sampleC {

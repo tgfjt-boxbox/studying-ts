@@ -55,10 +55,10 @@ var Sample = (function () {
     return Sample;
 })();
 // var foo: {
-// 	(name: string): string;
+//  (name: string): string;
 // };
 // foo = function(name: string): string {
-// 	return "Hello, " + x;
+//  return "Hello, " + x;
 // };
 // foo("TypeScript");
 var foo;

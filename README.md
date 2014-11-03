@@ -7,7 +7,6 @@
 
 [borisyankov/DefinitelyTyped](https://github.com/borisyankov/DefinitelyTyped)
 
-
 ## Link
 
 - [Handbook](http://www.typescriptlang.org/Handbook)
@@ -15,6 +14,14 @@
 - [BestPractioces](http://definitelytyped.org/guides/best-practices.html)
 - [早わかりチートシート](http://www.buildinsider.net/web/quicktypescript/01)
 - [TypeScript 型定義ファイルのある開発 TypeScript勉強会 VSハッカソン倶楽部](http://www.slideshare.net/vvakame/typescript-typescript-vs)
+
+### Vim
+- [leafgarland/typescript-vim](https://github.com/leafgarland/typescript-vim)
+- [clausreinke/typescript-tools](https://github.com/clausreinke/typescript-tools)
+
+## build
+
+`npm run build`
 
 ## tslint
 

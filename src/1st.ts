@@ -19,7 +19,7 @@ interface ISample {
 }
 
 var obj: ISample = {
-	name: "tgfjt"
+  name: "tgfjt"
 };
 
 /**
@@ -27,73 +27,73 @@ var obj: ISample = {
  * @return {void}
  */
 function hello() :void {
-	alert("hello");
+  alert("hello");
 }
 
 
 var hello2 = () => {
-	alert("hello");
+  alert("hello");
 };
 
 interface Person {
-	firstname: string;
-	lastname: string;
+  firstname: string;
+  lastname: string;
 }
 
 function greeter(person : Person) {
-	return "Hello, " + person.firstname + " " + person.lastname;
+  return "Hello, " + person.firstname + " " + person.lastname;
 }
 
 greeter({
-	firstname: "ho",
-	lastname: "ge"
+  firstname: "ho",
+  lastname: "ge"
 });
 
 var func: (word: string) => string;
 
 func = function(word: string): string {
-	return "Hi, " + word;
+  return "Hi, " + word;
 };
 
 class Sample {
-	name: string;
+  name: string;
 
-	// arrow関数では、this は 受け継がれる。
-	helloA(): () => string {
-		return () => "Hello, " + this.name;
-	}
+  // arrow関数では、this は 受け継がれる。
+  helloA(): () => string {
+    return () => "Hello, " + this.name;
+  }
 
-	// 普通にやると、globalになるはず
-	helloB(): () => string {
-		return function() { return "Hello, " + this.name; };
-	}
+  // 普通にやると、globalになるはず
+  helloB(): () => string {
+    return function() { return "Hello, " + this.name; };
+  }
 }
 
 
 
 // var foo: {
-// 	(name: string): string;
+//  (name: string): string;
 // };
 
 // foo = function(name: string): string {
-// 	return "Hello, " + x;
+//  return "Hello, " + x;
 // };
 
 // foo("TypeScript");
 
 
 var foo: {
-	(x: number): number;
-	(x: number, y: boolean): number;
-	(x: string): string;
+  (x: number): number;
+  (x: number, y: boolean): number;
+  (x: string): string;
 };
 
 foo = function(x: any, y?: boolean): any {
-	if (typeof x === "number") {
-		console.log("number", x)
-	} else {
-		console.log("not number", x)
-	}
+  if (typeof x === "number") {
+    console.log("number", x)
+  } else {
+    console.log("not number", x)
+  }
 }
 
 foo(123);
@@ -103,13 +103,13 @@ foo("TypeScript");
 
 
 interface ISampleF {
-	name: string
-	greet: (word: string) => string;
+  name: string
+  greet: (word: string) => string;
 }
 
 var objF: ISampleF = {
-	name: 'yoho',
-	greet: function(word: string): string {
-		return "Hi! " + word;
-	}
+  name: 'yoho',
+  greet: function(word: string): string {
+    return "Hi! " + word;
+  }
 }
