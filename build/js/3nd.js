@@ -36,3 +36,9 @@ var claus = Singleton.getInstance("Claus");
 console.log(santa === claus);
 var message = "str";
 message = true;
+var sampleM1;
+(function (sampleM1) {
+    sampleM1.str = "string";
+    var num = 123;
+})(sampleM1 || (sampleM1 = {}));
+var s = sampleM1.str;

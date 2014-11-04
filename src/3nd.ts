@@ -44,3 +44,12 @@ console.log(santa === claus);
 
 var message: string = "str";
 message = true;
+
+
+module sampleM1 {
+  export var str = "string";
+  var num = 123;
+}
+
+import s = sampleM1.str;
+import n = sampleM1.num;
