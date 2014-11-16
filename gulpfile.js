@@ -7,7 +7,7 @@ var eventStream = require('event-stream');
 
 gulp.task('scripts', function() {
 	var tsResult = gulp
-		.src('src/*.ts')
+		.src('src/**/*.ts')
 		.pipe(ts({
 				declarationFiles: true,
 				noExternalResolve: true
